@@ -55,23 +55,25 @@
 
   2. 设置开机启动
     - GUI模式
-       1. 命令行输入 `nmtui` 
+    1. 命令行输入 `nmtui`
+    
        ![1567928752026](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567928752026.png)
 
-       2. 选择Edit a connection，可以看到所有的网卡设备
+    2. 选择Edit a connection，可以看到所有的网卡设备
+    
        ![1567929010904](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567929010904.png)
-
-       3. 选中Edit，进入编辑界面
+       
+    3. 选中Edit，进入编辑界面
+    
        ![1567929097663](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567929097663.png)
 
-       4. 
-
+    4. 
          Option|DHCP|StaticIP
       	 -|-|-
          IPv4 Configuration|Automatic|Manual
 	 Other|![1567929560234](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567929560234.png)|![1567929695208](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567929695208.png)
 	   
-        5. 重启网络服务
+    5. 重启网络服务
 	   ```shell
 	   systemctl restart network
 	   ```

@@ -46,7 +46,7 @@
   
      ```shell
      ifup {interface}  #启动网卡 interface 指网卡ID,如enp0s3/enp0s8
-   ifdown {interface} #禁用网卡
+     ifdown {interface} #禁用网卡
      ```
   
      > ifup/ifdown是script，它会直接到 /etc/  sysconfig/network-scripts目录下搜索对应的配置文件，例如ifup  enp0s8，它会找出ifcfg-enp0s8这个文件的内容，然后加以设置。

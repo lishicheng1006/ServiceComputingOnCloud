@@ -117,3 +117,35 @@
      ![1567930828789](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567930828789.png)
      
      ![1567930990300](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567930990300.png)
+## SSH互信问题
+
+- 问题详情
+
+  > 在宿主主机通过 ssh root@192.168.100.2  建立ssh连接时，会出现以下提示
+
+  ![1567941531450](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567941531450.png)
+
+  ​	这个原因可能是本地主机的key/没有配置发生了变化，因此每次SSH链接都会有提示，只需要在交互下输入	yes即可，彻底的解决方法如下
+
+- 解决方案
+
+  1. 使用ssh连接远程主机时加上“-o StrictHostKeyChecking=no”的选项，去掉对主机的验证检查
+
+     ```shell
+     ssh  -o StrictHostKeyChecking=no  root@192.168.100.2
+     ```
+
+     ![1567941842924](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567941842924.png)
+
+  2. 直接在虚拟机内修改配置文件信息，彻底去掉验证
+
+     修改/etc/ssh/ssh_config文件中的配置，添加/修改如下两行配置：
+
+     ```shell
+     StrictHostKeyChecking no
+     UserKnownHostsFile /dev/null
+     ```
+
+     ![1567942277140](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567942277140.png)
+
+     ![1567942232130](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567942232130.png)

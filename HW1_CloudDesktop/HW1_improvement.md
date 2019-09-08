@@ -54,33 +54,31 @@
      > 不过，由于这两个程序主要是搜索设置文件（ifcfg-ethx）来进行启动与关闭的，所以在**使用前请确定ifcfg-xxx是否真的存在于正确的目录内**，否则会启动失败。另外，如果以ifconfig xxx来设置或者是修改了网络接口后，就无法再以ifdown  xxx的方式来关闭了。因为ifdown会分析比较目前的网络参数与ifcfg-xxx是否相符，不符的话，就会放弃这次操作。因此，**使用 ifconfig修改完毕后，应该要以ifconfig xxx down才能够关闭该接口**。
 
   2. 设置开机启动
-
-     - GUI模式
-
-       1. 命令行输入 `nmtui` ![1567928752026](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567928752026.png)
+    - GUI模式
+       1. 命令行输入 `nmtui` 
+       ![1567928752026](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567928752026.png)
 
        2. 选择Edit a connection，可以看到所有的网卡设备
-
        ![1567929010904](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567929010904.png)
 
-       3. 选中Edit，进入编辑界面![1567929097663](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567929097663.png)
+       3. 选中Edit，进入编辑界面
+       ![1567929097663](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567929097663.png)
 
        4. 
 
-          Option|DHCP|StaticIP
-      -|-|-
-       IPv4 Configuration|Automatic|Manual
-	      Other|![1567929560234](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567929560234.png)|![1567929695208](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567929695208.png)
+         Option|DHCP|StaticIP
+      	 -|-|-
+         IPv4 Configuration|Automatic|Manual
+	 Other|![1567929560234](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567929560234.png)|![1567929695208](https://raw.githubusercontent.com/wywwwwei/ServiceComputingOnCloud/master/HW1_CloudDesktop/pic/1567929695208.png)
 	   
-		  5. 重启网络服务
-  	
-	        ```shell
-	        systemctl restart network
-	        ```
+        5. 重启网络服务
+	   ```shell
+	   systemctl restart network
+	   ```
 	   
 	        
 	
-- 命令行模式(参考[Linux下网络配置、查看ip地址、网关信息，DNS信息(以centos7为例)](https://blog.csdn.net/qq_15304853/article/details/78700197))
+     - 命令行模式(参考[Linux下网络配置、查看ip地址、网关信息，DNS信息(以centos7为例)](https://blog.csdn.net/qq_15304853/article/details/78700197))
   
   > **CentOS7网络配置相关文件：**
   >

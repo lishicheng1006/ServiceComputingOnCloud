@@ -6,7 +6,7 @@
 
 [Github项目地址](https://github.com/wywwwwei/ServiceComputingOnCloud/tree/master/HW2_GoConfiguration)
 
-[CSDN博客地址]()
+[CSDN博客地址](https://blog.csdn.net/WeiXiaoAssassin/article/details/100863538)
 
 [TOC]
 

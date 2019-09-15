@@ -123,7 +123,7 @@ sudo yum install golang
    >
    >/etc/profile:此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行.并从/etc/profile.d目录的配置文件中搜集shell的设置，全局生效，使用　source profile 即可
    >
-   >~/.bash_profile:每个用户都可使用该文件输入专用于自己使用的shell信息,当用户登录时,该文件仅仅执行一次!默认情况下,设置一些环境变量,执行用户的.bashrc文件.此文件类似于/etc/profile，也是需要需要重启才会生效，/etc/profile对所有用户生效，~/.bash_profile只对当前用户生效。
+   >/.bash_profile:每个用户都可使用该文件输入专用于自己使用的shell信息,当用户登录时,该文件仅仅执行一次!默认情况下,设置一些环境变量,执行用户的.bashrc文件.此文件类似于/etc/profile，也是需要需要重启才会生效，/etc/profile对所有用户生效，/.bash_profile只对当前用户生效。
 
    值得注意，如果没有`/etc/profile`中配置全局变量，那么**当用户使用`sudo`运行指令时，它的环境变量是root的而不是当前用户的**。
 

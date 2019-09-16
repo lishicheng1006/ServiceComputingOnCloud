@@ -235,7 +235,7 @@ sudo yum install git
    cd $GOPATH/src/golang.org/x/
    git clone https://github.com/golang/lint.git
    
-   git install golang.org/x/lint/golint
+   go install golang.org/x/lint/golint
    ```
 
 3. **安装运行 hello world**

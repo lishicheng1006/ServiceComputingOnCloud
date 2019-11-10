@@ -1,0 +1,142 @@
+html,
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+#head_logo {
+	width: 104px;
+	height: 104px;
+	margin: 20px auto 20px auto;
+	background: url(../images/head.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+form {
+	width: 430px;
+	text-align: center;
+	border-radius: 20px;
+	margin: 30px auto 10px auto;
+}
+
+.textinput {
+	width: 330px;
+	height: 48px;
+	border: 1px solid #fff;
+	border-radius: 25px;
+	outline: none;
+	font-size: 18px;
+	color: white;
+	cursor: text;
+	background-color: transparent;
+	padding-left: 45px;
+}
+
+.warning {
+	font-size: 14px;
+	color: red;
+	margin: 5px 0 5px 0;
+	visibility: hidden;
+}
+
+body {
+	background-color: aqua;
+	background: url(../images/backgroud.png) no-repeat fixed;
+	background-size: 100% 100%;
+}
+
+#input_username {
+	background-image: url(../images/people.png);
+	background-size: 36px 36px;
+	background-position: 5px center;
+	background-repeat: no-repeat;
+}
+
+#input_studentID {
+	background-image: url(../images/businesscard.png);
+	background-size: 36px 36px;
+	background-position: 5px center;
+	background-repeat: no-repeat;
+}
+
+#input_password,#input_repeat_password{
+	background-image: url(../images/password.png);
+	background-size: 36px 36px;
+	background-position: 5px center;
+	background-repeat: no-repeat;
+}
+
+#input_phone {
+	background-image: url(../images/mobilephone.png);
+	background-size: 36px 36px;
+	background-position: 5px center;
+	background-repeat: no-repeat;
+}
+
+#input_email {
+	background-image: url(../images/mail.png);
+	background-size: 36px 36px;
+	background-position: 5px center;
+	background-repeat: no-repeat;
+}
+
+#reset_all,#submit_all
+{
+	width: 140px;
+    height: 50px;
+    border: 1px white solid;
+    border-radius: 25px;
+    margin: 5px 30px;
+    transition: all 0.5s;
+    background-color: transparent;
+    font-size: 14px;
+    color: white;
+	cursor: pointer;
+	outline: none;
+}
+
+/* #login
+{
+border: 1px white solid;
+border-radius: 25px;
+background: transparent;
+margin-left: 200px;
+margin-top: 10px;
+color: white;
+cursor: pointer;
+transition: all 0.5s;
+outline: none;
+} */
+
+#reset_all:hover,#submit_all:hover
+{
+	background-color: white;
+	transform: scale(1.1);
+	color: #1f6f4a;
+}
+
+#error_show
+{
+	color: red;
+}
+
+input::-webkit-input-placeholder {
+	color: white;
+}
+
+input::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: white;
+}
+
+input:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: white;
+}
+
+input:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: white;
+}

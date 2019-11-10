@@ -1,0 +1,28 @@
+$('#button_login').click(function(){
+    $.ajax({
+        type:'POST',
+        url:'/log',
+        async:true,
+        data:$('#whole_user').serialize(),
+		dataType:"text",
+		beforeSend:function(){
+			$('#button_login').attr('disabled',true);
+        },
+        success:function(err){
+            if(err=='Yes')
+            {
+                window.location.href='http://localhost:3000/detail';
+            }
+            else
+            {
+                $('#button_login').attr('disabled',false);
+                alert(err);
+            }
+        }
+    });
+});
+
+$('#button_regist').click(function(){
+    $('#button_regist').attr('disabled',true);
+    window.location.href='http://localhost:3000/regist';
+});

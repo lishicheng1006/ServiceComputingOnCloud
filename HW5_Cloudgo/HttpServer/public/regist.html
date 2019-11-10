@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sign Up</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="./stylesheets/regist.css" />
+	</head>
+
+	<body>
+		<div>
+			<form id="whole_user" method="post">
+					<div id="head_logo"></div>
+					<div id="error_show"></div>
+					<div id="form_username">
+						<input id='input_username' class="textinput" type="text" name="username" placeholder="Username" autocomplete="off"/>
+						<p id="warn_username" class="warning">用户名6~18位英文字母、数字或下划线，必须以英文字母开头</p>
+					</div>
+					
+					<div id="form_studentID">
+						<input id='input_studentID' class="textinput" type="text" name="studentID" placeholder="StudentID" autocomplete="off"/>
+						<p id="warn_studentID" class="warning">学号8位数字，不能以0开头</p>
+					</div>
+					
+					<div id="form_password">
+						<input id='input_password' class="textinput" type="password" name="password" placeholder="Password" autocomplete="off"/>
+						<p id="warn_password" class="warning">密码为6~12位数字、大小写字母、中划线、下划线</p>
+					</div>
+
+					<div id="form_repeat_password">
+						<input id='input_repeat_password' class="textinput" type="password" name="repeat_password" placeholder="Repeat password" autocomplete="off"/>
+						<p id="warn_repeat_password" class="warning">两次密码不一致</p>
+					</div>
+					
+					<div id="form_phone">
+						<input id='input_phone' class="textinput" type="text" name="phone" placeholder="Phone" autocomplete="off"/>
+						<p id="warn_phone" class="warning">电话11位数字，不能以0开头</p>
+					</div>
+					
+					<div id="form_email">
+						<input id='input_email' class="textinput" type="text" name="email" placeholder="E-mail" autocomplete="off"/>
+						<p id="warn_email" class="warning">非法邮箱地址</p>
+					</div>
+
+					<div id="controls">
+						<input id="reset_all" type="reset" value="CLEAR" />
+						<input id="submit_all" type="button" value="RIGISTER"/>
+					</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="./javascripts/Client_check.js" ></script>
+	</body>
+</html>

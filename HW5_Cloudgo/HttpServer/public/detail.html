@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>User details</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="./stylesheets/detail.css" />
+	</head>
+
+	<body>
+		<div>
+			<form id="whole_user" method="post">
+					<div id="head_logo"></div>
+					<div id="form_username">
+						<input id='input_username' class="textinput" type="text" name="username"  autocomplete="off" readonly="readonly"/>
+						<p class="pos">hide</p>
+					</div>
+					
+					<div id="form_studentID">
+						<input id='input_studentID' class="textinput" type="text" name="studentID"  autocomplete="off" readonly="readonly"/>
+						<p class="pos">hide</p>
+					</div>
+					
+					<div id="form_phone">
+						<input id='input_phone' class="textinput" type="text" name="phone"  autocomplete="off" readonly="readonly"/>
+						<p class="pos">hide</p>
+					</div>
+					
+					<div id="form_email">
+						<input id='input_email' class="textinput" type="text" name="email"  autocomplete="off" readonly="readonly"/>
+						<p class="pos">hide</p>
+					</div>
+
+					<div id="controls">
+						<input id="log_out" type="button" value="LOG OUT" />
+					</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="./javascripts/detail.js" ></script>
+	</body>
+</html>

@@ -271,3 +271,4 @@ DELETE localhost:7777/api/actegories/categoryID
 
 - 错误处理不够
 - 大量地使用了map，以致数据处理较慢
+- 没有实现异步操作

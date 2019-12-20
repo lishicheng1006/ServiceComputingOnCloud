@@ -215,7 +215,7 @@ Docker Engine支持构建，交付和运行基于容器的应用程序所涉及�
      #直接通过容器ID删除
      docker rm a735137b8b6f
      #当容器较多时，可通过grep获取对应容器名的docker ps -a行，然后awk切片输出所需内容
-     docker rm $(docker ps -a|grep DockerTest|akw '{print $1}') -f -v
+     docker rm $(docker ps -a|grep DockerTest|awk '{print $1}') -f -v
      ```
 
      ![rm](pics/rm.png)
